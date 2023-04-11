@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="./styles.css" rel="stylesheet">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cheat-Sheet Project</title>
+</head>
+<body>
+  <h1>HTML Cheat-Sheet</h1>
+  <br>
+  <h2>Table Tags</h2>
+  <div class="table">
+    <table>
+      <tr>
+        <th>Tag</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>&lt;table&gt;</td>
+        <td>Table</td>
+        <td>Presents information in a two-dimensional table to the users.</td>
+      </tr>
+      <tr class="row">
+        <td>&lt;tr&gt;</td>
+        <td>Table Rows</td>
+        <td>Defines a row of cells in a table.</td>
+      </tr>
+      <tr>
+        <td>&lt;td&gt;</td>
+        <td>Table Data</td>
+        <td>Defines a cell of a table that contains data</td>
+      </tr>
+      <tr class="row">
+        <td>&lt;th&gt;</td>
+        <td>Table Headings</td>
+        <td>Defines a header cell in an HTML table.</td>
+      </tr>
+    </table>
+    <br>
+    <h2>Table Spans</h2>
+      <table>
+        <tr>
+          <th>Attribute</th>
+          <th>Name</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>colspan</td>
+          <td>Spanning Columns</td>
+          <td>The attribute accepts an integer (greater than or equal to 1) to denote the number of columns it spans across.</td>
+        </tr>
+        <tr class="row">
+          <td>rowspan</td>
+          <td>Spanning Rows</td>
+          <td>Specifies the number of rows a cell should span.</td>
+        </tr>
+      </table>
+  </div>
+  <br>
+    <footer>
+      <h5>Made By: Teddy Sorenson</h5>
+    </footer>
+</body>
+</html>
+
+CSS 
+
+table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    text-align: center;
+}
+
+table tr {
+    border: 1px solid black;
+}
+
+table td {
+    padding: 20px;
+}
+
+h1, h2, h5, table, th{
+    text-align: center;
+    font-weight: bold;
+}
+
+h1, h2, h5 {
+    color: rgb(49, 23, 141);
+}
+
+th, td {
+    border-right: 1px solid black;
+}
+
+th:last-child, td:last-child {
+    border-right: none;
+}
+
+th {
+    background-color: rgb(89, 43, 163);
+    color: rgb(255, 255, 255);
+}
+
+html {
+    background-color: rgb(209, 196, 245);
+}
+
+.row {
+    background-color: rgb(126, 110, 219);
+}
